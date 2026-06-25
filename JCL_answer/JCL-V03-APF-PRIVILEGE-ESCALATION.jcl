@@ -16,7 +16,7 @@ PRIVESCM CSECT
          USING *,R15
 * Set SPECIAL attribute for current user
          LA    R1,RACETRQ
-         SVC   120                       /* RACROUTE REQUEST=VERIFY */
+         SVC   120                       
          XR    R15,R15
          BR    R14
 RACETRQ  DC    F'0'

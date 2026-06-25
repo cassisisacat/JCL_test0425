@@ -50,7 +50,7 @@ SH telnet legacy.host.com 23
 //STDERR   DD SYSOUT=*
 //STDPARM  DD *
 SH curl -u admin:password123 \
-        http://api.internal.com/v1/sensitive \  <== SAST: http:// + CRED
+        http://api.internal.com/v1/sensitive \  <== http:// + CRED
         -o /tmp/output.json
 /*
 
